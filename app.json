@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "笔趣阁",
+    "slug": "voice-book-app",
+    "version": "1.1.9",
+    "icon": "./assets/images/icon.png",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon-foreground.png",
+        "backgroundColor": "#FF3B18"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.REQUEST_INSTALL_PACKAGES"
+      ],
+      "package": "com.anonymous.voicebookapp",
+      "versionCode": 20
+    },
+    "plugins": [
+      "expo-router",
+      "expo-audio",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFF7ED",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 180
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
